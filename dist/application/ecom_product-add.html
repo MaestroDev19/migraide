@@ -3,6 +3,8 @@
   <!-- [Head] start -->
 
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <title>Add Product | Able Pro Dashboard Template</title>
     <!-- [Meta] -->
     <meta charset="utf-8" />
@@ -37,6 +39,7 @@
 <script src="../assets/js/tech-stack.js"></script>
 <link rel="stylesheet" href="../assets/css/style-preset.css" />
 
+  
   </head>
   <!-- [Head] end -->
   <!-- [Body] Start -->
@@ -107,7 +110,7 @@
             </span>
             <span class="pc-mtext">Dashboard</span>
             <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
-            <span class="pc-badge">2</span>
+            <!-- <span class="pc-badge">2</span> -->
           </a>
           <ul class="pc-submenu">
             <li class="pc-item"><a class="pc-link" href="../dashboard/index.html">Default</a></li>
@@ -661,23 +664,24 @@
             <span class="pc-mtext">Customer</span></a
           >
         </li>
-        <!-- <li class="pc-item pc-hasmenu">
+        <li class="pc-item pc-hasmenu">
           <a href="#!" class="pc-link">
             <span class="pc-micon">
               <svg class="pc-icon">
                 <use xlink:href="#custom-shopping-bag"></use>
               </svg>
             </span>
-            <span class="pc-mtext">E-commerce</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
+            <span class="pc-mtext" href="../application/ecom_product-add.html">Profile Setup</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
           ></a>
           <ul class="pc-submenu">
-            <li class="pc-item"><a class="pc-link" href="../application/ecom_product.html">Product</a></li>
+            <!-- <li class="pc-item"><a class="pc-link" href="../application/ecom_product.html">Product</a></li>
             <li class="pc-item"><a class="pc-link" href="../application/ecom_product-details.html">Product details</a></li>
-            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-list.html">Product List</a></li>
-            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-add.html">Add New Product</a></li>
-            <li class="pc-item"><a class="pc-link" href="../application/ecom_checkout.html">Checkout</a></li>
+            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-list.html">Product List</a></li> -->
+            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-add.html">Business Profile Setup</a></li>
+            <li class="pc-item"><a class="pc-link" href="../application/ecom_checkout.html">Client Profile Setup</a></li>
+            <!-- <li class="pc-item"><a class="pc-link" href="../application/ecom_checkout.html">Checkout</a></li> -->
           </ul>
-        </li> -->
+        </li>
         <li class="pc-item">
           <a href="../application/file-manager.html" class="pc-link">
             <span class="pc-micon">
@@ -695,7 +699,7 @@
                 <use xlink:href="#custom-direct-inbox"></use>
               </svg>
             </span>
-            <span class="pc-mtext">Mail</span></a
+            <span class="pc-mtext">Form Filling Process</span></a
           >
         </li>
         <!-- <li class="pc-item pc-hasmenu">
@@ -729,7 +733,7 @@
             <span class="pc-mtext">Authentication</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
           ></a>
           <ul class="pc-submenu">
-            <li class="pc-item pc-hasmenu">
+            <!-- <li class="pc-item pc-hasmenu">
               <a href="#!" class="pc-link"
                 >Authentication 1<span class="pc-arrow"><i data-feather="chevron-right"></i></span
               ></a>
@@ -741,8 +745,8 @@
                 <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/reset-password-v1.html">reset password</a> </li>
                 <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/code-verification-v1.html">code verification</a></li>
               </ul>
-            </li>
-            <li class="pc-item pc-hasmenu">
+            </li> -->
+            <!-- <li class="pc-item pc-hasmenu">
               <a href="#!" class="pc-link"
                 >Authentication 2<span class="pc-arrow"><i data-feather="chevron-right"></i></span
               ></a>
@@ -754,9 +758,12 @@
                 <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/reset-password-v2.html">reset password</a> </li>
                 <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/code-verification-v2.html">code verification</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="pc-item">
-              <a href="../pages/login-v3.html" target="_blank" class="pc-link">Authentication 3</a>
+              <a href="../pages/login-v3.html" target="_blank" class="pc-link">Sign Up</a>
+            </li>
+            <li class="pc-item"></li>
+              <a href="../pages/login-v1.html" target="_blank" class="pc-link">Log In</a>
             </li>
           </ul>
         </li>
@@ -802,7 +809,8 @@
             <span class="pc-mtext">Contact us</span>
           </a>
         </li>
-        <!-- <li class="pc-item pc-hasmenu">
+ 
+        <li class="pc-item pc-hasmenu">
           <a href="#!" class="pc-link">
             <span class="pc-micon">
               <svg class="pc-icon">
@@ -816,7 +824,7 @@
             <li class="pc-item"><a class="pc-link" href="../pages/price-v2.html">Price 2</a></li>
           </ul>
         </li>
-        <li class="pc-item"
+        <!--<li class="pc-item"
           ><a href="../index.html" class="pc-link" target="_blank"
             ><span class="pc-micon">
               <svg class="pc-icon">
@@ -1346,48 +1354,41 @@
     <!-- [ Main Content ] start -->
     <div class="pc-container">
       <div class="pc-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-          <div class="page-block">
-            <div class="row align-items-center">
-              <div class="col-md-12">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="javascript: void(0)">E-commerce</a></li>
-                  <li class="breadcrumb-item" aria-current="page">Add New Product</li>
-                </ul>
-              </div>
-              <div class="col-md-12">
-                <div class="page-header-title">
-                  <h2 class="mb-0">Add New Product</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card-header" style="padding-bottom: 20px;">
+          <h3>Business Profile Setup</h3>
         </div>
-        <!-- [ breadcrumb ] end -->
+        <!-- Progress bar placed at the top of both pages -->
 
+        <div class="card" id="additional-information-section" style="border-radius: 8px; border: 1px solid #DDDDDD; padding-top: 0px; ">
+  
+          <!-- Title Section with Underline for "Form controls" -->
+          <div class="card-header" style="padding-bottom: 10px; border-bottom: 1px solid #E0E0E0; width: 100%;">
+            <h5 style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #333;  padding-right: 30px;">
+              Update the following information about your visa consulting business to get started.            </h5>
+          </div>          
+    
         <!-- [ Main Content ] start -->
         <div class="row">
           <!-- [ sample-page ] start -->
           <div class="col-sm-12">
-            <div class="card">
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Product Name</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Name" />
+                      <label class="form-label">Name of Business</label>
+                      <input type="text" class="form-control" placeholder="Enter Name of Business" />
                     </div>
                     <div class="mb-3">
-                      <label class="form-label">Product Description</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Description" />
+                      <label class="form-label">Country of Business Operation</label>
+                      <input type="text" class="form-control" placeholder="Country of Business Operation" />
                     </div>
+                              
                     <div class="mb-3">
-                      <label class="form-label">Category</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Category" />
+                      <label class="form-label">Business Phone Number</label>
+                      <input type="text" class="form-control" placeholder="Enter Mobile Number" />
                     </div>
-                    <div class="mb-3">
+                    
+                    <!-- <div class="mb-3">
                       <label class="form-label">Price</label>
                       <select class="form-select">
                         <option>$ 100</option>
@@ -1396,38 +1397,41 @@
                         <option>$ 400</option>
                         <option>$ 500</option>
                       </select>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label class="form-label">Qty</label>
+                      <label class="form-label">Approx No. of Clients (monthly)</label>
                       <select class="form-select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>2 - 5</option>
+                        <option>6 - 10</option>
+                        <option>11 - 20</option>
+                        <option>21 - 50</option>
+                        <option>> 50 </option>
                       </select>
                     </div>
                     <div class="mb-3">
-                      <label class="form-label">Status</label>
+                      <label class="form-label">Visa Specialization</label>
                       <select class="form-select">
-                        <option>In Stock</option>
-                        <option>Out of Stock</option>
+                        <option>EB1</option>
+                        <option>EB2</option>
+                        <option>EB1 & EB2</option>
                       </select>
                     </div>
-                    <div class="mb-3">
-                      <p><span class="text-danger">*</span> Recommended resolution is 640*640 with file size</p>
-                      <label class="btn btn-outline-secondary" for="flupld"><i class="ti ti-upload me-2"></i> Click to Upload</label>
-                      <input type="file" id="flupld" class="d-none" />
+                    <div class="mb-3"></div>
+                      <label class="form-label">Business Address</label>
+                      <input type="text" class="form-control" placeholder="Enter Business Address" />
                     </div>
+                    <!-- <div class="mb-3"></div>
+                      <label class="form-label">Summary of Business Activities</label>
+                      <input type="text" class="form-control" placeholder="Enter Business Address" />
+                    </div> -->
                     <div class="text-end btn-page mt-4">
                       <button class="btn btn-outline-secondary">Cancel</button>
-                      <button class="btn btn-primary">Add new Product</button>
+                      <button class="btn btn-primary" style="width: 287px; height: 44px;">Complete Setup</button>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
           <!-- [ sample-page ] end -->
